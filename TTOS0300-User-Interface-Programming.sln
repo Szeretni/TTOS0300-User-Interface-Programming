@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTOS0300-User-Interface-Programming", "TTOS0300-User-Interface-Programming.csproj", "{089E8F2F-485D-4916-BC5C-573A5C77F2FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temp", "Temp.csproj", "{089E8F2F-485D-4916-BC5C-573A5C77F2FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{18536548-DCDC-4FD8-85E3-8C093A67AA57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_FirstWFPApp", "Examples\01_FirstWFPApp\01_FirstWFPApp.csproj", "{5640A730-E05F-478B-8C4F-726F0D22CA0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{089E8F2F-485D-4916-BC5C-573A5C77F2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{089E8F2F-485D-4916-BC5C-573A5C77F2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{089E8F2F-485D-4916-BC5C-573A5C77F2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5640A730-E05F-478B-8C4F-726F0D22CA0D} = {18536548-DCDC-4FD8-85E3-8C093A67AA57}
 	EndGlobalSection
 EndGlobal
