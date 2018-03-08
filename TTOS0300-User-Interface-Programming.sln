@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{18
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_FirstWFPApp", "Examples\01_FirstWFPApp\01_FirstWFPApp.csproj", "{5640A730-E05F-478B-8C4F-726F0D22CA0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAudioVideoPlayer", "Examples\01_MyAudioVideoPlayer\MyAudioVideoPlayer\MyAudioVideoPlayer.csproj", "{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +25,16 @@ Global
 		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5640A730-E05F-478B-8C4F-726F0D22CA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5640A730-E05F-478B-8C4F-726F0D22CA0D} = {18536548-DCDC-4FD8-85E3-8C093A67AA57}
+		{A58F7E42-B3E3-42B8-9EB9-2CF75E22CC51} = {18536548-DCDC-4FD8-85E3-8C093A67AA57}
 	EndGlobalSection
 EndGlobal
