@@ -76,7 +76,7 @@ namespace Snake
 
         private void GameTick(object sender, EventArgs e)
         {
-            int drawStep = 7;
+            int drawStep = 10;
             switch (currentDirection)
             {
             case Direction.Up:
