@@ -138,7 +138,7 @@ namespace SnakeGame
                 gameObject.Draw(drawingContext);
             }
         }
-
+        
         protected override void OnRender(DrawingContext drawingContext)
         {
             base.OnRender(drawingContext);
@@ -146,7 +146,7 @@ namespace SnakeGame
             // draw our game backing store
             drawingContext.DrawDrawing(backingStore);
         }
-
+        
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
