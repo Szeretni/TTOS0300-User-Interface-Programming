@@ -1,0 +1,30 @@
+﻿<Window x:Class="Birds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Birds"
+        mc:Ignorable="d"
+        Title="Hannun vihaiset linnut" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <ListBox x:Name="lstData" ItemsSource="{Binding}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="3" Text="{Binding Name}"/>
+                            <Image Margin="3" Source="{Binding ImgFile}" Height="32" MouseEnter="Image_MouseEnter"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel>
+                <TextBlock>Nimi:</TextBlock>
+                <TextBlock x:Name="tbName" FontSize="18"/>
+                <TextBlock>Hinta:</TextBlock>
+                <TextBlock x:Name="tbPrice" FontSize="18"/>
+                <Image x:Name="imgBird"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
