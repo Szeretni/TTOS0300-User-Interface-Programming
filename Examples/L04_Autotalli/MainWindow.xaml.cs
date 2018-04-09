@@ -27,20 +27,33 @@ namespace Autotalli
         public MainWindow()
         {
             InitializeComponent();
-            //aloituskuva
-            NaytaKuva("autotalli.png");
-            //ladataan kaikki autot muistiin
-            autot = JAMK.IT.Autotalli.HaeAutot();
-            //täytetään combobox autojen merkeillä
-            //vaihtoehto 1 manuaalisesti
-            List<String> merkit = new List<string>();
-            merkit.Add("Audi");
-            merkit.Add("Saab");
-            merkit.Add("Volvo");
-            cmbMerkit.ItemsSource = merkit;
-            //vaihtoehto 2 linqlla datasta
-            var result = autot.Select(m => m.Merkki).Distinct();
-            cmbMerkit.ItemsSource = result;
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                //aloituskuva
+                NaytaKuva("autotalli.png");
+                //ladataan kaikki autot muistiin
+                //autot = JAMK.IT.Autotalli1.HaeAutot(); tämä oli dummy-dataa
+                autot = JAMK.IT.BLAutotalli.HaeAutotDB();
+                //täytetään combobox autojen merkeillä
+                //vaihtoehto 1 manuaalisesti
+                List<String> merkit = new List<string>();
+                merkit.Add("Audi");
+                merkit.Add("Saab");
+                merkit.Add("Volvo");
+                cmbMerkit.ItemsSource = merkit;
+                //vaihtoehto 2 linqlla datasta
+                var result = autot.Select(m => m.Merkki).Distinct();
+                cmbMerkit.ItemsSource = result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void NaytaKuva(string url)
@@ -72,7 +85,7 @@ namespace Autotalli
 
         private void btnHaeAutot_Click(object sender, RoutedEventArgs e)
         {
-            dgAutot.ItemsSource = JAMK.IT.Autotalli.HaeAutot();
+            dgAutot.ItemsSource = JAMK.IT.BLAutotalli.HaeAutot();
         }
 
         private void dgAutot_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -108,6 +121,19 @@ namespace Autotalli
             var result = autot.Where(m => m.Merkki.Contains(merkki)).ToList();
             dgAutot.ItemsSource = result;
             NaytaKuva("autotalli.png");
+        }
+
+        private void btnHaeAutotMysql_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                autot = JAMK.IT.DBAutotalli.GetAllAutosFromMySQL();
+                dgAutot.ItemsSource = autot;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

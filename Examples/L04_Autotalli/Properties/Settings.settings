@@ -1,7 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Autotalli.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="palvelin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mysql.labranet.jamk.fi</Value>
+    </Setting>
+    <Setting Name="tietokanta" Type="System.String" Scope="User">
+      <Value Profile="(Default)">L2912_1</Value>
+    </Setting>
+    <Setting Name="tunnut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">L2912</Value>
+    </Setting>
+    <Setting Name="salasana" Type="System.String" Scope="User">
+      <Value Profile="(Default)">q4ARIboJAkdZeErWozcP13NbCCtojxx6</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
