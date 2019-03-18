@@ -1,4 +1,4 @@
-# My first C# WFP/UWP course's examples.
+My first C# WFP/UWP course's examples.
 
 [Main project is here](https://github.com/Szeretni/TTOS0300_UI_Programming_Collaboration).
 
